@@ -1,0 +1,56 @@
+
+<!--¿Qué es el método addEventListener?*
+addEventListener es un método utilizado en JavaScript para adjuntar un 
+evento a un elemento HTML. Este método toma dos argumentos: el tipo de
+evento que se va a escuchar (como "click" o "submit") y una función que 
+se ejecutará cuando ocurra el evento.*/-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de addEventListener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <button id="boton">Haz clic aquí</button>
+    
+    <!-- Script JavaScript -->
+    <script>
+        // Seleccionar el botón por su ID
+        const boton = document.getElementById('boton');
+
+        // Agregar un evento de clic al botón
+        boton.addEventListener('click', function() {
+            // Mostrar un mensaje de alerta al hacer clic en el botón
+            alert('¡Hola Mundo!');
+        });
+    </script>
+</body>
+</html>
